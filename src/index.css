@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-gold-50: #fdfaf2;
+  --color-gold-100: #f6ebd3;
+  --color-gold-200: #ead39a;
+  --color-gold-300: #dbb35d;
+  --color-gold-400: #c29b40;
+  --color-gold-500: #a78030;
+  --color-gold-600: #8a6523;
+  --color-gold-700: #6e4e18;
+  --color-gold-800: #51390e;
+  --color-gold-900: #352507;
+  --color-gold-950: #1b1202;
+
+  --color-wood-50: #fdfcf8;
+  --color-wood-100: #f6f4ea;
+  --color-wood-200: #ebdcb9;
+  --color-wood-300: #a18a68;
+  --color-wood-400: #8f7654;
+  --color-wood-500: #786043;
+  --color-wood-600: #614d34;
+  --color-wood-700: #4a3a25;
+  --color-wood-800: #3d2b1a;
+  --color-wood-900: #2a1b0e;
+  --color-wood-950: #1c1106;
+}
+
+/* Custom styles for wood-themed scrollbars and styling elements */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-wood-950);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-700);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-600);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-wood-50);
+  color: var(--color-wood-900);
+  overflow-x: hidden;
+}
+
+/* Wood texture subtle background overlay */
+.bg-wood-texture {
+  background-image: radial-gradient(rgba(181, 137, 50, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
